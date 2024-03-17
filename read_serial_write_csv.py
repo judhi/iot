@@ -1,7 +1,9 @@
 # Python code to read data from serial port
 # and save it to serialdata.csv
 # Judhi Prasetyo 2020
-import serial # using serial library, need to install Pyserial
+import serial # using serial library, need to install pyserial (one time)
+# use this command from OS prompt to install pyserial:
+# py -m pip install pyserial
 import datetime # using date time library
 ser = serial.Serial('COM4',9600) # open serial port, change to yours!
 ser.flushInput()
